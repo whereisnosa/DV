@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DV | Room44</title>
+    <title>Vault | Room44</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -13,7 +17,7 @@
       <div class="navbar">
         <div class="logo">
           <!-- <img src="images/logo.png" alt=""> -->
-          <h1><a href="index.html">Room<span>44</span></a></h1>
+          <h1><a href="index.html">FromThe<span>44</span></a></h1>
         </div>
 
         <nav>
@@ -26,23 +30,34 @@
 
           </ul> -->
         </nav>
-        <a href="https://www.instagram.com/wrkshp44/"><img id="cart" src="img/shopping-bag.png" width="30px" height="30px"></a>
-        <img src="img/menu.png" width="30px" class="menu-icon" onclick="menutoggle()">
+        <img src="img/play.png" width="60px" height="60px" id="icon">
+        <!-- <img src="img/menu.png" width="30px" class="menu-icon" onclick="menutoggle()"> -->
+
+        <audio id="mySong" autoplay>
+          <source src="Comfy - Hoods Hottest.mp3" type="audio/mp3">
+        </audio>
       </div>
     </div>
-
 
     <div class="small-container">
 
       <div class="row row-2">
-        <h2>Coming Soon</h2>
+        <center>
+          <h2>Press Play🎧</h2>
+        </center>
+        <!-- <h2>UNTITLED</h2> -->
         <select>
-          <option>Default Sorting</option>
-          <option>Sort by price</option>
-          <option>Sort by popularity</option>
-          <option>Sort by rating</option>
-          <option>sort by sales</option>
+          <a href="index.html"><span>1</span></a>
+          <option><a href="#"><span>2</span></a></option>
+          <option><a href="index2.html"><span>3</span></a></option>
         </select>
+        <!-- <div class="page-btn">
+          <a href="index.html"><span>1</span></a>
+          <a href="#"><span>2</span></a>
+          <a href="index2.html"><span>3</span></a>
+          <!-- <span>4</span>
+          <span>&#8594;</span> -->
+        <!-- </div> -->
       </div>
 
       <div class="row">
@@ -371,10 +386,26 @@
         <a href="index.html"><span>1</span></a>
         <a href="index1.html"><span>2</span></a>
         <a href="#"><span>3</span></a>
+        <a href="hc.html"><span>4</span></a>
         <!-- <span>4</span>
         <span>&#8594;</span> -->
       </div>
     </div>
+
+    <script>
+      var mySong = document.getElementById("mySong");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function(){
+        if(mySong.paused){
+          mySong.play();
+          icon.src = "img/pause.png";
+        }else{
+          mySong.pause();
+          icon.src = "img/play.png";
+        }
+      }
+    </script>
 
 
   </body>
