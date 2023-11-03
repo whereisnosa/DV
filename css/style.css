@@ -8,10 +8,11 @@
   display: flex;
   align-items: center;
   padding: 20px;
+  background: #fff;
 }
 
-h2{
-  font: slasha;
+.ad{
+  background-color: #1C2834;
 }
 
 nav{
@@ -41,11 +42,73 @@ span{
   color: #de0000;
 }
 
+h1{
+  color: #555;
+  font-family: 'Rock Salt', cursive;
+  font-weight: normal;
+}
+
 .container{
   max-width: 1400px;
   margin: auto;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.services{
+  background: #1C2834;
+}
+
+.srvc{
+  padding-top: 50px;
+  /* width: 1000px; */
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box{
+  width: 300px;
+  height: 500px;
+  background: #fff;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  align-items: center;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  margin: auto;
+  /* display: flex; */
+}
+.box img{
+  width: 250px;
+}
+.box h3{
+  font-size: 25px;
+  padding-top: 20px;
+  /* color: #de0000; */
+}
+.box p{
+  color: #4e746b;
+  padding-top: 20px;
+  line-height: 25px;
+}
+.box .bttn{
+  width: 150px;
+  height: 40px;
+  background: #de0000;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.box .bttn:hover{
+  background: #fff;
+  color: #de0000;
+  border: 1px solid #de0000;
 }
 
 .row{
@@ -70,6 +133,12 @@ span{
   line-height: 60px;
   margin: 25px 0;
 }
+.hed{
+  color: #fff;
+}
+.hed-p{
+  color: #dbdbdb;
+}
 
 .btn{
   display: inline-block;
@@ -86,7 +155,7 @@ span{
 }
 
 .header{
-  background-color: #D8DAE3;
+  background-color: #1C2834;
 }
 
 .header .row{
